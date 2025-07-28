@@ -7,6 +7,9 @@
  <link rel="stylesheet" href="/bootstrap.css">
 </head>
 <style>
+#carouselExampleSlidesOnly{
+    top: 0;
+}
 #hover{
     transition: .3s;
 }
@@ -15,19 +18,20 @@
 }
 #input{
     width: 65%;
-    margin-right: 300px;
+    margin-left: 30px;
 }
 #right{
-    margin-left: 200px;
+    margin-left: 170px;
 }
 </style>
 <body>
-    <nav class="navbar navbar-opacity-100 " style="background-color: #000000;  position: relative;">
+    <nav class="navbar" style="background-color: rgba(19, 22, 26, 0.3);">
   <div class="container">
     <img src="/FInd your inspiration. _ Flickr/imgi_1_flickr_logo_dots.7670d27a (1).svg" alt="" width="8%">
-    <form class="d-inline">
-        <input type="Search" id="input" class="" placeholder="Q Photos, people or groups">
+    <form class="d-flex flex-grow-1 gap-3">
+        <input type="Search" id="input" class="form-control" placeholder="Q Photos, people or groups">
         <button id="right">Login</button>
+        <button class="px-4 py-2 bg-white rounded-3" style="border: none;">Sign Up</button>
     </form>
   </div>
 </nav>
